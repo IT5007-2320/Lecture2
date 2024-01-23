@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="it5007.css">
         <script src="it5007.js"></script>
     </head>
-    <body onload="newsfetch()">
+    <body onload="newsfetch(); loadScript();">
             <h1>IT5007 News Website</h1>
             <nav>
                 <ul>
@@ -42,7 +42,20 @@
                     </div>
                 </div>
                 <div id="second">
-                    Input box
+                    <h2>Number guessing game</h2>
+
+                    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+                    <div class="form">
+                        <label for="guessField">Enter a guess: </label>
+                        <input type="text" id="guessField" class="guessField">
+                        <input type="submit" value="Submit guess" class="guessSubmit">
+                    </div>
+
+                    <div class="resultParas">
+                        <p class="result"></p>
+                        <p class="lowOrHi"></p>
+                    </div>
                 </div>
                 <div id="third">
                     <div id="thirda" class="news">
